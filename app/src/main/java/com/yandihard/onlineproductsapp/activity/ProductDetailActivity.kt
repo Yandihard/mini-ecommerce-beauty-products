@@ -7,7 +7,7 @@ import com.yandihard.onlineproductsapp.databinding.ActivityProductDetailBinding
 
 class ProductDetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProductDetailBinding
-    var quantity = 1
+    private var quantity = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
