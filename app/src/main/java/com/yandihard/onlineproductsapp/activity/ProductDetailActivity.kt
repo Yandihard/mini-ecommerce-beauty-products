@@ -23,7 +23,9 @@ class ProductDetailActivity : AppCompatActivity() {
         binding.plusQuantity.setOnClickListener { quantity++
             binding.tvQuantity.text = quantity.toString() }
 
-        binding.minQuantity.setOnClickListener { quantity--
+        binding.minQuantity.setOnClickListener {
+             if(quantity <= 1) quantity = 1
+             else quantity--
             binding.tvQuantity.text = quantity.toString() }
     }
 }
