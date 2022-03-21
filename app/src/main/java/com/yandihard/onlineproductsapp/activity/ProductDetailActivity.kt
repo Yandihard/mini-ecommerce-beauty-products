@@ -7,6 +7,7 @@ import com.yandihard.onlineproductsapp.databinding.ActivityProductDetailBinding
 
 class ProductDetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProductDetailBinding
+    var quantity = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,8 +19,6 @@ class ProductDetailActivity : AppCompatActivity() {
     }
 
     private fun setupQuantity() {
-        var quantity = 1
-
         binding.plusQuantity.setOnClickListener { quantity++
             binding.tvQuantity.text = quantity.toString() }
 
