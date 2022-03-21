@@ -19,7 +19,6 @@ class ProductDetailActivity : AppCompatActivity() {
     }
 
     private fun setupQuantity() {
-
         binding.plusQuantity.setOnClickListener { quantity++
             binding.tvQuantity.text = quantity.toString() }
 
